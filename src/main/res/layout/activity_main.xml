@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eu_preciso_de_mais_espa_o_documento_a4__1_"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-60dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="418dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Formulário"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editNome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editIdade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <EditText
+            android:id="@+id/editIdade"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:duplicateParentState="false"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Idade"
+            android:inputType="number|textPersonName"
+            android:paddingRight="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Sexo"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editIdade" />
+
+
+        <Button
+            android:id="@+id/bt_cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:text="Cadastrar "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/resultadoNome"
+            android:layout_width="385dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="12dp"
+            android:paddingRight="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultadoIdade" />
+
+        <TextView
+            android:id="@+id/resultadoIdade"
+            android:layout_width="385dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="12dp"
+            android:paddingRight="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_cadastrar" />
+
+        <TextView
+            android:id="@+id/resultadoSexo"
+            android:layout_width="385dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="52dp"
+            android:paddingRight="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultadoNome" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="384dp"
+            android:layout_height="148dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/bt_cadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <RadioButton
+                android:id="@+id/radioButtonFeminino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feminino" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMasculino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prefiro não informar" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
